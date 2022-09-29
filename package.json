@@ -1,0 +1,26 @@
+{
+  "name": "kanalabs-web",
+  "version": "1.0.0",
+  "description": "kanalabs-web-app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Guna",
+  "license": "ISC",
+  "devDependencies": {
+    "@wdio/local-runner": "^7.24.1",
+    "@wdio/mocha-framework": "^7.24.1",
+    "@wdio/spec-reporter": "^7.24.1",
+    "chai": "^4.3.6",
+    "chai-webdriverio": "^1.0.0",
+    "chromedriver": "^105.0.1",
+    "local-runner": "^0.1.1-alpha",
+    "wdio-chromedriver-service": "^7.3.2",
+    "webdriverio": "^7.24.1"
+  },
+  "dependencies": {
+    "@wdio/cli": "^7.24.1",
+    "dotenv": "^16.0.2"
+  }
+}
