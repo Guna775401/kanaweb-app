@@ -1,6 +1,12 @@
 const fs = require('fs')
-const extension = fs.readFileSync('./extension/extension_22_9_19_0.crx')
-const base64 = Buffer.from(extension).toString('base64');
+//const extension = fs.readFileSync('./extension/extension_phantom.crx')
+const extensionGlow = fs.readFileSync('./extension/extension_glow.crx')
+const extensionMartian = fs.readFileSync('./extension/extension_martian.crx')
+const extensionPetra = fs.readFileSync('./extension/extension_petra.crx')
+const extensionPontem = fs.readFileSync('./extension/extension_pontem.crx')
+const extensionFewcha = fs.readFileSync('./extension/extension_fewcha.crx')
+
+const base64 = Buffer.from(extensionMartian).toString('base64');
 
 
 
@@ -108,7 +114,7 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'https://kana-aggregator-web.pages.dev/',
+    baseUrl: 'https://develop.kana-aggregator-web.pages.dev/',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
@@ -155,7 +161,7 @@ exports.config = {
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
-        timeout: 60000
+        timeout: 360000
     },
     //
     // =====
@@ -227,18 +233,18 @@ exports.config = {
     /**
      * Function to be executed before a test (in Mocha/Jasmine) starts.
      */
-    beforeTest: function () {
+    // beforeTest: function () {
 
-        const chai = require('chai')
-        const chaiWebdriver = require('chai-webdriverio').default
-        chai.use(chaiWebdriver(browser))
+    //     const chai = require('chai')
+    //     const chaiWebdriver = require('chai-webdriverio').default
+    //     chai.use(chaiWebdriver(browser))
 
-        global.assert = chai.assert
-        global.should = chai.should
-        global.expect = chai.expect
+    //     global.assert = chai.assert
+    //     global.should = chai.should
+    //     global.expect = chai.expect
 
 
-    },
+    // },
 
 
 
