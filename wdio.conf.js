@@ -1,12 +1,21 @@
-const fs = require('fs')
-const extension = fs.readFileSync('./extension/extension_22_9_19_0.crx')
-const base64 = Buffer.from(extension).toString('base64');
 
+
+const fs = require('fs')
+//const extension = fs.readFileSync('./extension/extension_phantom.crx')
+const extensionGlow = fs.readFileSync('./extension/extension_glow.crx')
+const extensionMartian = fs.readFileSync('./extension/extension_1_2_1_0.crx')
+const extensionPetra = fs.readFileSync('./extension/extension_petra.crx')
+const extensionPontem = fs.readFileSync('./extension/extension_pontem.crx')
+const extensionFewcha = fs.readFileSync('./extension/extension_fewcha.crx')
+
+//const base64 = Buffer.from(extensionMartian).toString('base64');
+
+const base64 = Buffer.from(extensionFewcha).toString('base64');
+
+// If not working chrome driver RUn this comment ( npm install chromedriver --chromedriver-force-download )
 
 
 exports.config = {
-
-
     //
     // ====================
     // Runner Configuration
@@ -28,9 +37,16 @@ exports.config = {
     // then the current working directory is where your `package.json` resides, so `wdio`
     // will be called from there.
     //
-    specs: [ [
-        './test/specs/**/*.js'
-    ]],
+
+    specs: [
+        [
+            //'./test/specs/**/*.js'
+
+            './test/specs/fewcha_swap.js'
+
+
+        ]
+    ],
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
@@ -57,7 +73,6 @@ exports.config = {
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://saucelabs.com/platform/platform-configurator
     //
-
     capabilities: [{
 
         // maxInstances can get overwritten per capability. So if you have an in-house Selenium
@@ -66,11 +81,14 @@ exports.config = {
         maxInstances: 5,
         //
         browserName: 'chrome',
+
         acceptInsecureCerts: true,
+
+      
+
         'goog:chromeOptions': {
             extensions: [base64],
           }
-
 
         // If outputDir is provided WebdriverIO can capture driver session logs
         // it is possible to configure which logTypes to include/exclude.
@@ -108,10 +126,10 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'https://kana-aggregator-web.pages.dev/',
+    baseUrl: 'https://develop.kana-aggregator-web.pages.dev/',
     //
     // Default timeout for all waitFor* commands.
-    waitforTimeout: 10000,
+    waitforTimeout: 120000,
     //
     // Default timeout in milliseconds for request
     // if browser driver or grid doesn't send response
@@ -155,7 +173,7 @@ exports.config = {
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
-        timeout: 60000
+        timeout: 150000
     },
     //
     // =====
@@ -227,25 +245,12 @@ exports.config = {
     /**
      * Function to be executed before a test (in Mocha/Jasmine) starts.
      */
-    beforeTest: function () {
-
-        const chai = require('chai')
-        const chaiWebdriver = require('chai-webdriverio').default
-        chai.use(chaiWebdriver(browser))
-
-        global.assert = chai.assert
-        global.should = chai.should
-        global.expect = chai.expect
-
-
-    },
-
-
-
+    // beforeTest: function (test, context) {
+    // },
     /**
-    * Hook that gets executed _before_ a hook within the suite starts (e.g. runs before calling
-    * beforeEach in Mocha)
-    */
+     * Hook that gets executed _before_ a hook within the suite starts (e.g. runs before calling
+     * beforeEach in Mocha)
+     */
     // beforeHook: function (test, context) {
     // },
     /**
