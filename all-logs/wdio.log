@@ -1,0 +1,6 @@
+2023-01-05T08:56:54.710Z INFO chromedriver: Initiate Chromedriver Lau2023-01-05T08:56:55.996Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2023-01-05T08:56:56.001Z INFO @wdio/local-runner: Start worker 0-0 with arg: 
+2023-01-05T08:58:25.188Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+2023-01-05T08:58:25.194Z INFO @wdio/cli:launcher: Run onComplete hook
+2023-01-05T08:58:25.226Z INFO @wdio/local-runner: Shutting down spawned worker
+2023-01-05T08:58:25.493Z INFO @wdio/local-runner: Waiting for 0 to shut down gracefully

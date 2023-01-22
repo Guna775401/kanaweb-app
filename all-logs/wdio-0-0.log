@@ -1,0 +1,149 @@
+2023-01-05T08:57:10.861Z INFO @wdio/local-runner: Run worker command: run
+2023-01-05T08:57:14.288Z INFO webdriver: Initiate new session using the WebDriver protocol
+2023-01-05T08:57:16.980Z INFO webdriver: [POST] http://localhost:9515/session
+2023-01-05T08:57:16.980Z INFO webdriver: DATA {
+  capabilities: {
+    alwaysMatch: { browserName: 'chrome', acceptInsecureCerts: true },
+    firstMatch: [ {} ]
+  },
+  desiredCapabilities: { browserName: 'chrome', acceptInsecureCerts: true }
+}
+2023-01-05T08:57:21.640Z INFO webdriver: COMMAND navigateTo("https://app.kanalabs.io/")
+2023-01-05T08:57:21.641Z INFO webdriver: [POST] http://localhost:9515/session/687760266de96700ba2af1123cc2a985/url
+2023-01-05T08:57:21.641Z INFO webdriver: DATA { url: 'https://app.kanalabs.io/' }
+2023-01-05T08:57:33.639Z INFO webdriver: COMMAND maximizeWindow()
+2023-01-05T08:57:33.639Z INFO webdriver: [POST] http://localhost:9515/session/687760266de96700ba2af1123cc2a985/window/maximize
+2023-01-05T08:57:34.002Z INFO webdriver: RESULT { height: 744, width: 1382, x: -8, y: -8 }
+2023-01-05T08:57:34.009Z INFO webdriver: COMMAND findElement("xpath", "//*[text()="Select Wallet"]")
+2023-01-05T08:57:34.010Z INFO webdriver: [POST] http://localhost:9515/session/687760266de96700ba2af1123cc2a985/element
+2023-01-05T08:57:34.010Z INFO webdriver: DATA { using: 'xpath', value: '//*[text()="Select Wallet"]' }
+2023-01-05T08:57:34.117Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '1216f21c-b3ca-4ca3-8542-794a9edb1745'
+}
+2023-01-05T08:57:34.136Z INFO webdriver: COMMAND elementClick("1216f21c-b3ca-4ca3-8542-794a9edb1745")
+2023-01-05T08:57:34.136Z INFO webdriver: [POST] http://localhost:9515/session/687760266de96700ba2af1123cc2a985/element/1216f21c-b3ca-4ca3-8542-794a9edb1745/click
+2023-01-05T08:57:34.600Z INFO webdriver: COMMAND findElement("xpath", "//*[text()="Petra"]")
+2023-01-05T08:57:34.601Z INFO webdriver: [POST] http://localhost:9515/session/687760266de96700ba2af1123cc2a985/element
+2023-01-05T08:57:34.601Z INFO webdriver: DATA { using: 'xpath', value: '//*[text()="Petra"]' }
+2023-01-05T08:57:34.709Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '37d6296c-537b-401a-8d8b-4ceca1a14660'
+}
+2023-01-05T08:57:34.717Z INFO webdriver: COMMAND elementClick("37d6296c-537b-401a-8d8b-4ceca1a14660")
+2023-01-05T08:57:34.718Z INFO webdriver: [POST] http://localhost:9515/session/687760266de96700ba2af1123cc2a985/element/37d6296c-537b-401a-8d8b-4ceca1a14660/click
+2023-01-05T08:57:45.173Z INFO webdriver: COMMAND getWindowHandles()
+2023-01-05T08:57:45.175Z INFO webdriver: [GET] http://localhost:9515/session/687760266de96700ba2af1123cc2a985/window/handles
+2023-01-05T08:57:46.146Z INFO webdriver: RESULT [
+  'CDwindow-16C93DE0E4AF93ACA489D974748FB44B',
+  'CDwindow-F044EC6C2662A8B6109E4E3936636156'
+]
+2023-01-05T08:57:46.147Z INFO webdriver: COMMAND switchToWindow("CDwindow-16C93DE0E4AF93ACA489D974748FB44B")
+2023-01-05T08:57:46.148Z INFO webdriver: [POST] http://localhost:9515/session/687760266de96700ba2af1123cc2a985/window
+2023-01-05T08:57:46.148Z INFO webdriver: DATA { handle: 'CDwindow-16C93DE0E4AF93ACA489D974748FB44B' }
+2023-01-05T08:57:46.256Z INFO webdriver: COMMAND getUrl()
+2023-01-05T08:57:46.257Z INFO webdriver: [GET] http://localhost:9515/session/687760266de96700ba2af1123cc2a985/url
+2023-01-05T08:57:46.385Z INFO webdriver: RESULT https://app.kanalabs.io/
+2023-01-05T08:57:46.386Z INFO webdriver: COMMAND getTitle()
+2023-01-05T08:57:46.387Z INFO webdriver: [GET] http://localhost:9515/session/687760266de96700ba2af1123cc2a985/title
+2023-01-05T08:57:46.446Z INFO webdriver: RESULT Kana Labs Aggregator
+2023-01-05T08:57:46.448Z INFO webdriver: COMMAND executeScript("return (() => window.name).apply(null, arguments)", <object>)
+2023-01-05T08:57:46.462Z INFO webdriver: [POST] http://localhost:9515/session/687760266de96700ba2af1123cc2a985/execute/sync
+2023-01-05T08:57:46.463Z INFO webdriver: DATA {
+  script: 'return (() => window.name).apply(null, arguments)',
+  args: []
+}
+2023-01-05T08:57:46.511Z INFO webdriver: RESULT 
+2023-01-05T08:57:46.513Z INFO webdriver: COMMAND switchToWindow("CDwindow-F044EC6C2662A8B6109E4E3936636156")
+2023-01-05T08:57:46.514Z INFO webdriver: [POST] http://localhost:9515/session/687760266de96700ba2af1123cc2a985/window
+2023-01-05T08:57:46.514Z INFO webdriver: DATA { handle: 'CDwindow-F044EC6C2662A8B6109E4E3936636156' }
+2023-01-05T08:57:46.565Z INFO webdriver: COMMAND getUrl()
+2023-01-05T08:57:46.566Z INFO webdriver: [GET] http://localhost:9515/session/687760266de96700ba2af1123cc2a985/url
+2023-01-05T08:57:46.769Z INFO webdriver: RESULT https://chrome.google.com/webstore/detail/petra-aptos-wallet/ejjladinnckdgjemekebdpeokbikhfci
+2023-01-05T08:57:46.773Z INFO webdriver: COMMAND findElement("xpath", "//*[text()="Add to Chrome"]")
+2023-01-05T08:57:46.775Z INFO webdriver: [POST] http://localhost:9515/session/687760266de96700ba2af1123cc2a985/element
+2023-01-05T08:57:46.776Z INFO webdriver: DATA { using: 'xpath', value: '//*[text()="Add to Chrome"]' }
+2023-01-05T08:57:46.846Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '09170aa4-69b8-4e5c-bc42-b14622c6dd41'
+}
+2023-01-05T08:57:46.864Z INFO webdriver: COMMAND elementClick("09170aa4-69b8-4e5c-bc42-b14622c6dd41")
+2023-01-05T08:57:46.865Z INFO webdriver: [POST] http://localhost:9515/session/687760266de96700ba2af1123cc2a985/element/09170aa4-69b8-4e5c-bc42-b14622c6dd41/click
+2023-01-05T08:57:59.254Z INFO webdriver: COMMAND performActions(<object>)
+2023-01-05T08:57:59.255Z INFO webdriver: [POST] http://localhost:9515/session/687760266de96700ba2af1123cc2a985/actions
+2023-01-05T08:57:59.255Z INFO webdriver: DATA { actions: [ { type: 'key', id: 'keyboard', actions: [Array] } ] }
+2023-01-05T08:57:59.461Z INFO webdriver: COMMAND releaseActions()
+2023-01-05T08:57:59.462Z INFO webdriver: [DELETE] http://localhost:9515/session/687760266de96700ba2af1123cc2a985/actions
+2023-01-05T08:58:22.250Z INFO webdriver: COMMAND getWindowHandles()
+2023-01-05T08:58:22.254Z INFO webdriver: [GET] http://localhost:9515/session/687760266de96700ba2af1123cc2a985/window/handles
+2023-01-05T08:58:22.322Z INFO webdriver: RESULT [
+  'CDwindow-16C93DE0E4AF93ACA489D974748FB44B',
+  'CDwindow-F044EC6C2662A8B6109E4E3936636156'
+]
+2023-01-05T08:58:22.324Z INFO webdriver: COMMAND switchToWindow("CDwindow-16C93DE0E4AF93ACA489D974748FB44B")
+2023-01-05T08:58:22.324Z INFO webdriver: [POST] http://localhost:9515/session/687760266de96700ba2af1123cc2a985/window
+2023-01-05T08:58:22.324Z INFO webdriver: DATA { handle: 'CDwindow-16C93DE0E4AF93ACA489D974748FB44B' }
+2023-01-05T08:58:22.623Z INFO webdriver: COMMAND getUrl()
+2023-01-05T08:58:22.623Z INFO webdriver: [GET] http://localhost:9515/session/687760266de96700ba2af1123cc2a985/url
+2023-01-05T08:58:22.716Z INFO webdriver: RESULT https://app.kanalabs.io/
+2023-01-05T08:58:22.716Z INFO webdriver: COMMAND getTitle()
+2023-01-05T08:58:22.719Z INFO webdriver: [GET] http://localhost:9515/session/687760266de96700ba2af1123cc2a985/title
+2023-01-05T08:58:22.944Z INFO webdriver: RESULT Kana Labs Aggregator
+2023-01-05T08:58:22.945Z INFO webdriver: COMMAND executeScript("return (() => window.name).apply(null, arguments)", <object>)
+2023-01-05T08:58:22.945Z INFO webdriver: [POST] http://localhost:9515/session/687760266de96700ba2af1123cc2a985/execute/sync
+2023-01-05T08:58:22.946Z INFO webdriver: DATA {
+  script: 'return (() => window.name).apply(null, arguments)',
+  args: []
+}
+2023-01-05T08:58:23.278Z INFO webdriver: RESULT 
+2023-01-05T08:58:23.279Z INFO webdriver: COMMAND switchToWindow("CDwindow-F044EC6C2662A8B6109E4E3936636156")
+2023-01-05T08:58:23.279Z INFO webdriver: [POST] http://localhost:9515/session/687760266de96700ba2af1123cc2a985/window
+2023-01-05T08:58:23.280Z INFO webdriver: DATA { handle: 'CDwindow-F044EC6C2662A8B6109E4E3936636156' }
+2023-01-05T08:58:23.976Z INFO webdriver: COMMAND getUrl()
+2023-01-05T08:58:23.976Z INFO webdriver: [GET] http://localhost:9515/session/687760266de96700ba2af1123cc2a985/url
+2023-01-05T08:58:24.098Z INFO webdriver: RESULT https://chrome.google.com/webstore/detail/petra-aptos-wallet/ejjladinnckdgjemekebdpeokbikhfci
+2023-01-05T08:58:24.099Z INFO webdriver: COMMAND getTitle()
+2023-01-05T08:58:24.100Z INFO webdriver: [GET] http://localhost:9515/session/687760266de96700ba2af1123cc2a985/title
+2023-01-05T08:58:24.114Z INFO webdriver: RESULT Petra Aptos Wallet - Chrome Web Store
+2023-01-05T08:58:24.115Z INFO webdriver: COMMAND executeScript("return (() => window.name).apply(null, arguments)", <object>)
+2023-01-05T08:58:24.116Z INFO webdriver: [POST] http://localhost:9515/session/687760266de96700ba2af1123cc2a985/execute/sync
+2023-01-05T08:58:24.116Z INFO webdriver: DATA {
+  script: 'return (() => window.name).apply(null, arguments)',
+  args: []
+}
+2023-01-05T08:58:24.134Z INFO webdriver: RESULT 
+2023-01-05T08:58:24.143Z INFO webdriver: COMMAND getLogTypes()
+2023-01-05T08:58:24.144Z INFO webdriver: [GET] http://localhost:9515/session/687760266de96700ba2af1123cc2a985/se/log/types
+2023-01-05T08:58:24.287Z INFO webdriver: RESULT [ 'browser', 'driver' ]
+2023-01-05T08:58:24.288Z INFO webdriver: COMMAND getLogs("driver")
+2023-01-05T08:58:24.289Z INFO webdriver: [POST] http://localhost:9515/session/687760266de96700ba2af1123cc2a985/se/log
+2023-01-05T08:58:24.289Z INFO webdriver: DATA { type: 'driver' }
+2023-01-05T08:58:24.290Z INFO webdriver: COMMAND getLogs("browser")
+2023-01-05T08:58:24.291Z INFO webdriver: [POST] http://localhost:9515/session/687760266de96700ba2af1123cc2a985/se/log
+2023-01-05T08:58:24.291Z INFO webdriver: DATA { type: 'browser' }
+2023-01-05T08:58:24.304Z INFO webdriver: RESULT []
+2023-01-05T08:58:24.307Z INFO webdriver: RESULT [
+  {
+    level: 'SEVERE',
+    message: 'https://kit.fontawesome.com/a076d05399.js - Failed to load resource: the server responded with a status of 403 ()',
+    source: 'network',
+    timestamp: 1672909043916
+  },
+  {
+    level: 'SEVERE',
+    message: 'https://chrome.google.com/webstore/ajax/logreferrerchain/ejjladinnckdgjemekebdpeokbikhfci?hl=en-US&gl=IN&pv=20210820&mce=atf%2Cpii%2Crtr%2Crlb%2Cgtc%2Chcn%2Csvp%2Cwtd%2Chap%2Cnma%2Cdpb%2Cutb%2Chbh%2Cebo%2Chqb%2Cifm%2Cndd%2Cntd%2Coiu%2Cuga%2Cc3d%2Cncr%2Chns%2Cctm%2Cac%2Chot%2Chfi%2Cdtp%2Cmac%2Cbga%2Cepb%2Cfcf%2Crai%2Crma%2Clrc&_reqid=352057&rt=j - Failed to load resource: the server responded with a status of 400 ()',
+    source: 'network',
+    timestamp: 1672909065386
+  },
+  {
+    level: 'SEVERE',
+    message: 'https://chrome.google.com/webstore/detail/petra-aptos-wallet/undefined - Failed to load resource: the server responded with a status of 404 ()',
+    source: 'network',
+    timestamp: 1672909065386
+  },
+  {
+    level: 'SEVERE',
+    message: 'https://lh3.googleusercontent.com/wCf1YUphdi7ShSVGIRKE1d1In9UMqzoQdY3NzOQPq-xL9LSvllWUjEAz4JZSU7ODb0ux5flMFQ=w220-h140-e365-rj-sc0x00ffffff - Failed to load resource: the server responded with a status of 404 ()',
+    source: 'network',
+    timestamp: 1672909065939
+  }
+]
+2023-01-05T08:58:24.313Z INFO webdriver: COMMAND deleteSession()
+2023-01-05T08:58:24.314Z INFO webdriver: [DELETE] http://localhost:9515/session/687760266de96700ba2af1123cc2a985

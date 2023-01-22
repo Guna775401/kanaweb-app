@@ -1,0 +1,5 @@
+Route count : 19 routes found! & RouteName : Pontem X Aptoswap
+0.003657
+APT -> MOJO -> USDT
+$0.00
+Result :Swap transaction success click to see in explorer
